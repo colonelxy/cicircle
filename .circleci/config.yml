@@ -26,12 +26,10 @@ jobs:
   print_my_name:
     docker:
       - image: cimg/base:stable
-    steps:
-      - checkout
-      - run: 
-          name: 'echo My Name!'
-          command: |
-            echo $New1
+        environment:
+          # name: 'echo My Name!'
+          # command: |
+            New1: my-value-Harry
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
