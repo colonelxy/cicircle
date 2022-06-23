@@ -39,7 +39,8 @@ workflows:
   say-hello-workflow:
     jobs:
       - print-hello
-      - print_world:
+      - print_my_name:
           requires:
            - print-hello
+
 
